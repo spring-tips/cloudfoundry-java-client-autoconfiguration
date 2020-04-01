@@ -13,7 +13,7 @@ The other benefit of this approach is that the platform is responsible for build
 
 In Cloud Foundry, the act of restaging an application forces it to rebuild that environment. The platform can do this for you automatically, too. You can do rolling restages if you want. You might do this because you want to specify some new environment varaibles. Have a new message queue or database to bind to the application? Restage it. You can do it if you want to upgrade something like the JDK or whatever else is described by the buildpack. Java 14 is out? Great, let's use that. 
 
-Cloud Foundry makes this kind fo work easy because it's all controllable through an HTTP REST API. You can ask the platform, what kind of applications do you have that reusing - say - a Python-based buildpack? Which is using Java? Then you can tell it stage only those.
+Cloud Foundry makes this kind fo work easy because it's all controllable through an HTTP REST API. You can ask the platform, what kind of applications do you have that are using - say - a Python-based buildpack? Which is using Java? Then you can tell it stage only those.
 
 ## The Cloud Foundry Java client
 
